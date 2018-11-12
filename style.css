@@ -1,0 +1,70 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: lightblue;
+  margin-top: 3px;
+  overflow: auto;
+  border-style: solid;
+  border-style: groove;
+  border-radius: 10px;
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+
+section {
+  width: 90%;
+}
+
+article {
+  display: block;
+  border-style: solid;
+  border-style: groove;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 86px;
+  margin-top: 0.075cm;
+  color: blue;
+  overflow: auto;
+}
+
+header {
+  display: block;
+  background-color: blue;
+  border-style: solid;
+  border-style: groove;
+  border-radius: 10px;
+  font-size: 3ch;
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+ul h1 {
+  color: white;
+  font-size: 3ch;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0.05%;
+}
+
+h1 {
+  color: blue;
+  font-size: 20pt;
+}
+
+h2 {
+  color: lightblue;
+  font-size: 15pt;
+}
+
+section img,
+section iframe {
+  height: 100;
+  width: 120;
+  float: left;
+  margin: 0.05cm;
+}
