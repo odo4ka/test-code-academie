@@ -1,36 +1,56 @@
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "header header "
+    "nav section"
+    "footer footer";
+}
+
+nav {
+  grid-area: "nav";
+
   background-color: lightblue;
-  margin-top: 3px;
-  overflow: auto;
   border-style: solid;
   border-style: groove;
   border-radius: 10px;
-  float: left;
-  height: 100%;
-  width: 10%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1em;
+}
+nav ul h1 {
+  color: white;
+  font-size: 2em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 section {
-  width: 90%;
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 article {
-  display: block;
+  flex: 1;
+
   border-style: solid;
   border-style: groove;
   border-radius: 10px;
-  position: relative;
-  margin-left: 86px;
-  margin-top: 0.075cm;
   color: blue;
-  overflow: auto;
+  align-items: center;
 }
 
 header {
-  display: block;
+  grid-area: header;
+
   background-color: blue;
   border-style: solid;
   border-style: groove;
@@ -38,17 +58,6 @@ header {
   font-size: 3ch;
   color: white;
   text-align: center;
-  width: 90%;
-}
-ul h1 {
-  color: white;
-  font-size: 3ch;
-}
-
-ul li a {
-  color: white;
-  text-decoration: none;
-  margin: 0.05%;
 }
 
 h1 {
@@ -61,10 +70,38 @@ h2 {
   font-size: 15pt;
 }
 
-section img,
-section iframe {
+article img,
+article iframe {
   height: 100;
   width: 120;
   float: left;
-  margin: 0.05cm;
+}
+
+footer {
+  grid-area: footer;
+
+  background-color: blueviolet;
+  border-style: solid;
+  border-style: groove;
+  border-radius: 10px;
+  font-size: 3ch;
+  color: white;
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
+.smallerText {
+  font-size: 10pt;
+}
+
+article form {
+  color: black;
+}
+
+#newsletter {
 }
