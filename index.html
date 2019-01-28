@@ -53,18 +53,34 @@
 <article id="newsletter">
 <h2>Please leave your contact detalis </h2>
 
- <form>
-	First name  <br>
- <input type="text" name="firstname"> <br>
-  Second name <br>
- <input type="text" name="secondtname"> <br>
- Sex : <br>
- <input type="radio" name="sex"> Man <br>
- <input type="radio" name="sex"> Woman <br>
-   E-mail :<br>
-  <input type="text" name="email"> <br>
+ <form action="https://code-academie.free.beeceptor.com" method="post">
+	<fieldset>
+		<legend> Your information : </legend>
+   <p>	
+		<label for="firstName"> First name </label>
+    <input type="text" name="firstName" id="firstName"/> 
+	 </p>
+		
+	 <p>
+		 <label for="secondName"> Second name </label>
+		 <input type="text" name="secondName" id="secondName"/>
+	 </p>	 
+	 <p>
+		 <label> Sex </label> <br>
+     <input type="radio" name="sex" value="man" id="man"/>  
+		 <label for="man"> Man </label><br>
+     <input type="radio" name="sex" value="woman" id="woman"/> 
+		 <label for="woman"> Woman </label> <br>
+	 </p>
+
+	 <p>
+		 <label for="email"> E-mail </label>
+		 <input type="text" name="email" id="email"/>
+	</p>
+	</fieldset>
 	
 	<input type="submit" value="Submit">
+	<input type="reset" value="Delete">
  </form>	
 
 </article>

@@ -105,3 +105,17 @@ article form {
 
 #newsletter {
 }
+
+fieldset {
+  border-radius: 10px;
+  background-color: rgb(50, 180, 50);
+  max-width: 500px;
+  padding: 16px;
+}
+
+legend {
+  text-decoration: none;
+  border-radius: 10px;
+  border-style: solid;
+  background-color: rgb(50, 180, 50);
+}
